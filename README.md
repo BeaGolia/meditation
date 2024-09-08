@@ -4,25 +4,26 @@
 
 
 ## Overview
-The Meditation Timer App is a simple and user-friendly application designed to help users meditate by setting a programmable timer. 
-It allows the user to start, pause, and reset a countdown timer, modify the time using a counter or manual input, and includes references to meditation with text and images. 
+Meditation is a simple and user-friendly application designed to help users meditate by setting a programmable timer. 
+It allows the user to start, pause, and reset a countdown timer, modify the time using a counter or manual input, and includes references to meditation with text and quotes. 
 The design is responsive and intuitive, making it easy to use across devices.
 
 ## Features
-- Custom Timer: Users can set the timer in minutes using + and - buttons or by typing the value manually.
-- Start/Pause/Reset Timer: Start, pause, and reset the timer at any moment.
-- Default Timer: Automatically sets the timer to 30 minutes on reset.
-- Error Handling: Displays an error if the user tries to start the timer without entering at least one minute.
-- Responsive Design: Works well across desktops, tablets, and mobile devices.
--  Hooks and Context API: The app uses modern React features such as hooks and context for state management.
+- **Customizable Timer**: Users can set their meditation timer to a specific number of minutes.
+- **Pause/Resume Functionality**: The timer can be paused and resumed at any time.
+- **Error Handling**: If the timer is set to 0 minutes, an error message prompts the user to enter at least 1 minute.
+- **Responsive Design**: The application is fully responsive and adapts to different screen sizes.
+- **Meditation Resources**: The app displays additional resources for meditation (texts, quotes, etc.).
+- **Helmet Integration**: Used for dynamic document head management (titles, metadata).
 
 ## Technologies
-- React: Core library for building the UI.
-- React Router: For page navigation.
-- Axios: For making API requests.
-- React Hooks: For managing the state and side effects.
-- Context API: To handle global state across components.
-- CSS: For responsive styling.
+- **React**: Front-end framework for building user interfaces.
+- **React Hooks**: Used for state management.
+- **React Router**: Enables navigation between pages.
+- **SCSS**: For styling components more efficiently.
+- **React Context API**: To manage the timer's global state.
+- **Axios**: For handling HTTP requests (if needed in the future for resources).
+- **react-helmet**: For managing the document head and page titles.
 
 ## Installation
 Follow these steps to set up and run the project on your local machine.
@@ -36,11 +37,11 @@ Ensure you have the following software installed:
 ### Steps
 Clone the Repository:
 
-```git clone https://github.com/yourusername/meditation-timer-app.git```
+```git clone https://github.com/yourusername/meditation.git```
 
 Navigate to the Project Directory:
 
-```cd meditation-timer-app```
+```cd meditation```
 
 Install Dependencies:
 
@@ -55,33 +56,6 @@ Start the Application:
 - Or using yarn: ```yarn start```
 
 The application should now be running on ```http://localhost:3000```.
-
-## Main Files:
-- App.js: The root component of the application.
-- TimerContext.js: Handles the global timer state using Context API.
-- Timer.jsx: The main timer component where the timer UI and controls are located.
-- index.js: The entry point of the app, where React renders the root component.
-
-## Usage:
-- Setting the Timer:
-
-You can modify the timer by typing the desired number of minutes in the input field or using the + and - buttons to increment/decrement the time.
-
-- Starting the Timer:
-
-Click the "Start" button to begin the countdown.
-
-- Pausing the Timer:
-
-You can pause the timer at any time by clicking the "Pause" button.
-
-- Resetting the Timer:
-
-Click the "Reset" button to set the timer back to 30 minutes.
-
-- Error Handling:
-
-If you try to start the timer without setting at least one minute, an error message will appear prompting you to enter a valid time.
 
 ## Acknowledgments
 Credits and thanks to [mindful](https://www.mindful.org/) for the inspiration.
