@@ -1,6 +1,7 @@
 # Meditation Timer App
 
-![image](https://github.com/user-attachments/assets/4f1efd26-907c-42d0-a574-d2e41009bace)
+![image](https://github.com/user-attachments/assets/49a2930c-465c-49fa-8b45-56095c42fa8b)
+
 
 ## Overview
 The Meditation Timer App is a simple and user-friendly application designed to help users meditate by setting a programmable timer. 
