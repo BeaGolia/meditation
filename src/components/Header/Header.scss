@@ -1,0 +1,18 @@
+.app-header ul{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+}
+.app-header li{
+  margin: 0 15px;
+}
+.app-header ul li a{
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+.app-header ul li a:hover{
+  text-decoration: underline;
+}

@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# Meditation Timer App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](https://github.com/user-attachments/assets/4f1efd26-907c-42d0-a574-d2e41009bace)
 
-## Available Scripts
+## Overview
+The Meditation Timer App is a simple and user-friendly application designed to help users meditate by setting a programmable timer. 
+It allows the user to start, pause, and reset a countdown timer, modify the time using a counter or manual input, and includes references to meditation with text and images. 
+The design is responsive and intuitive, making it easy to use across devices.
 
-In the project directory, you can run:
+## Features
+- Custom Timer: Users can set the timer in minutes using + and - buttons or by typing the value manually.
+- Start/Pause/Reset Timer: Start, pause, and reset the timer at any moment.
+- Default Timer: Automatically sets the timer to 30 minutes on reset.
+- Error Handling: Displays an error if the user tries to start the timer without entering at least one minute.
+- Responsive Design: Works well across desktops, tablets, and mobile devices.
+-  Hooks and Context API: The app uses modern React features such as hooks and context for state management.
 
-### `npm start`
+## Technologies
+- React: Core library for building the UI.
+- React Router: For page navigation.
+- Axios: For making API requests.
+- React Hooks: For managing the state and side effects.
+- Context API: To handle global state across components.
+- CSS: For responsive styling.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
+Follow these steps to set up and run the project on your local machine.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
+Ensure you have the following software installed:
 
-### `npm test`
+- Node.js: Install Node.js
+- npm or yarn: npm is installed with Node.js by default. Yarn is an alternative package manager.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Steps
+Clone the Repository:
 
-### `npm run build`
+```git clone https://github.com/yourusername/meditation-timer-app.git```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Navigate to the Project Directory:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```cd meditation-timer-app```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Install Dependencies:
 
-### `npm run eject`
+- Using npm: ```npm install```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Or using yarn: ```yarn install```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Start the Application:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Using npm: ```npm start```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Or using yarn: ```yarn start```
 
-## Learn More
+The application should now be running on ```http://localhost:3000```.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Main Files:
+- App.js: The root component of the application.
+- TimerContext.js: Handles the global timer state using Context API.
+- Timer.jsx: The main timer component where the timer UI and controls are located.
+- index.js: The entry point of the app, where React renders the root component.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Usage:
+- Setting the Timer:
 
-### Code Splitting
+You can modify the timer by typing the desired number of minutes in the input field or using the + and - buttons to increment/decrement the time.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Starting the Timer:
 
-### Analyzing the Bundle Size
+Click the "Start" button to begin the countdown.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Pausing the Timer:
 
-### Making a Progressive Web App
+You can pause the timer at any time by clicking the "Pause" button.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Resetting the Timer:
 
-### Advanced Configuration
+Click the "Reset" button to set the timer back to 30 minutes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Error Handling:
 
-### Deployment
+If you try to start the timer without setting at least one minute, an error message will appear prompting you to enter a valid time.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Acknowledgments
+Credits and thanks to [mindful](https://www.mindful.org/) for the inspiration.
 
-### `npm run build` fails to minify
+Project Link: https://beagolia.github.io/meditation/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

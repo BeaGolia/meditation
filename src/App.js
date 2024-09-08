@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Usa Routes invece di Switch
+import Header from './components/Header/Header';
+import MeditationTimer from './components/MeditationTimer/MeditationTimer';
+import MeditationResources from './components/MeditationResources/MeditationResources';
+import { Helmet } from 'react-helmet';
+import './App.scss';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Helmet>
+        <title>Meditation App</title>
+      </Helmet>
+      <div className="app">
+        <Header />
+        <Routes> {/* Routes */}
+          <Route path="/" element={<MeditationTimer />} /> {/* element */}
+          <Route path="/resources" element={<MeditationResources />} />
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

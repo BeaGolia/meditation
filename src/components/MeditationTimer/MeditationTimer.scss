@@ -1,0 +1,32 @@
+button{
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  border: 1px solid black;
+}
+button:hover{
+  opacity: 0.5;
+}
+button:active{
+  opacity: 0.2;
+}
+input {
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+}
+.quote{
+  font-style: italic;
+  margin: 50px 10px;
+}
+.error-message {
+  color: rgb(190, 4, 4);
+  font-size: 16px;
+  margin-top: 10px;
+}
