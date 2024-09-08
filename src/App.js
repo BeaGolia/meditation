@@ -8,15 +8,16 @@ import './App.scss';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/meditation">
       <Helmet>
         <title>Meditation App</title>
       </Helmet>
       <div className="app">
         <Header />
         <Routes> {/* Routes */}
-          <Route path="/" element={<MeditationTimer />} /> {/* element */}
+          <Route path="/" element={<MeditationTimer />} /> 
           <Route path="/resources" element={<MeditationResources />} />
+          <Route path="*" element={<MeditationTimer />} />
         </Routes>
       </div>
     </Router>
